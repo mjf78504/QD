@@ -25,8 +25,8 @@ class utvAPP:
             "lastLoginTime": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3],
             "nickName": "52****76",
             "registeTime": "2020-02-02T18:51:13",
-            "userID": self.phoneId,
-            "userPhone": self.phoneNum,
+            "userID": "10476621",
+            "userPhone": "52250176",
             "watchTime": []
         }
         print(login_data)
