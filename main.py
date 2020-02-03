@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-from apps.Utv import Utv
+from apps.Utv import utvAPP
 
 username = os.getenv('utv_mobile')
 userid = os.getenv('utv_id')
