@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 class utvAPP:
+
     def __init__(self):
         self.session = requests.Session()
         self.headers = {
@@ -16,16 +17,16 @@ class utvAPP:
     def utv(self, username, userid):
         self.phoneNum = username
         self.phoneId = userid
-      	login_url = 'http://campaign.utvhk.com/jfdk/login.do'
-      	login_data = {
+        login_url = 'http://campaign.utvhk.com/jfdk/login.do'
+        login_data = {
             "deviceID": "8e6aab4ec4c41e16d2933474169e8a1e",
-    	    "isBuySpecialProductPackage": [],
-    	    "isCMHKUser": "true",
-    	    "lastLoginTime": datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],
-    	    "nickName": "52****76",
-    	    "registeTime": "2020-02-02T18:51:13",
-    	    "userID": self.phoneId,
-    	    "userPhone": self.phoneNum,
+            "isBuySpecialProductPackage": [],
+            "isCMHKUser": "true",
+            "lastLoginTime": datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],
+            "nickName": "52****76",
+            "registeTime": "2020-02-02T18:51:13",
+            "userID": self.phoneId,
+            "userPhone": self.phoneNum,
             "watchTime": []
         }
         login_req = self.session.post(login_url, data=login_data, headers=self.headers)
