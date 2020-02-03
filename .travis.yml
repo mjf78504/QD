@@ -1,0 +1,14 @@
+language: python
+python: "3.6"
+
+notifications:
+  email: false
+
+before_install:
+  - export TZ='Asia/Shanghai'
+
+install:
+  - pip install requests pycrypto
+
+script:
+  - python3 main.py
