@@ -29,6 +29,7 @@ class utvAPP:
             "userPhone": self.phoneNum,
             "watchTime": []
         }
+        print(login_data)
         login_req = self.session.post(login_url, data=login_data, headers=self.headers)
         login_msg = '登录情况：' + login_req.json()['msg'] + '\n'
         print(login_msg)
