@@ -22,7 +22,7 @@ class utvAPP:
             "deviceID": "8e6aab4ec4c41e16d2933474169e8a1e",
             "isBuySpecialProductPackage": [],
             "isCMHKUser": "true",
-            "lastLoginTime": datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],
+            "lastLoginTime": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3],
             "nickName": "52****76",
             "registeTime": "2020-02-02T18:51:13",
             "userID": self.phoneId,
